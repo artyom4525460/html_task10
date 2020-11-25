@@ -118,8 +118,8 @@ h3 {
 
 .menu-button {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 8px;
+  left: 8px;
   cursor: pointer; }
   @media screen and (max-width: 450px) {
     .menu-button {
@@ -258,6 +258,61 @@ form {
       @media screen and (max-width: 450px) {
         .registration-header .line-block .line-text {
           font-size: 24px; } }
+
+.menu-section {
+  padding: 0; }
+
+.menu-block {
+  min-height: 100vh;
+  width: 242px;
+  filter: drop-shadow(14.724px 2.862px 12.5px rgba(0, 0, 0, 0.16));
+  background-color: #521231; }
+  .menu-block .menu-header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 42px 18px;
+    display: flex; }
+    .menu-block .menu-header .logo {
+      width: 77px;
+      height: 77px;
+      border-radius: 50px;
+      border: 2px solid #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px; }
+      .menu-block .menu-header .logo img {
+        max-width: 100%;
+        max-height: 100%; }
+    .menu-block .menu-header .text {
+      padding: 4px 10px; }
+      .menu-block .menu-header .text .title {
+        font-size: 14px;
+        color: #202020;
+        font-weight: 700;
+        padding-bottom: 15px; }
+      .menu-block .menu-header .text .undertitle {
+        font-size: 10px;
+        color: #202020;
+        font-weight: 400;
+        opacity: 0.8; }
+  .menu-block .menu-body {
+    width: 100%;
+    padding-bottom: 40px; }
+    .menu-block .menu-body .item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      .menu-block .menu-body .item:last-child {
+        border-bottom: 0; }
+      .menu-block .menu-body .item a {
+        padding: 20px 0 20px 45px;
+        display: flex; }
+        .menu-block .menu-body .item a img {
+          max-width: 18px; }
+        .menu-block .menu-body .item a .text {
+          font-size: 13px;
+          color: #ffffff;
+          font-weight: 400;
+          padding: 0 14px; }
 
 .registration-form {
   width: 100%; }
