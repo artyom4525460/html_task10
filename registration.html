@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+        <meta charset="utf-8">
+        <link href="./css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header registration-header">
+            <div class="menu-button" onclick="alert('Menu Button is working')">
+                <img src="./images/menu.svg" alt="">
+            </div>
+            <h1>
+                Add New User
+            </h1>
+            <div class="line-block">
+                <div class="line line-left"></div>
+                <div class="line-text">User Details</div>
+                <div class="line line-right"></div>
+            </div>
+        </section>
+        <section class="registration">
+            <div class="form registration-form">
+                <div class="form-field required">
+                    <div class="form-field-label">
+                        <label for="username">Username:</label>
+                    </div>
+                    <div class="form-field-input">
+                        <input type="text" name="username" id="username" required>
+                    </div>
+                </div>
+                <div class="form-field required">
+                    <div class="form-field-label">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="form-field-input">
+                        <input class="password" type="password" name="password" id="password" required>
+                    </div>
+                </div>
+                <div class="form-field required">
+                    <div class="form-field-label">
+                        <label for="retype_password">Retype Password:</label>
+                    </div>
+                    <div class="form-field-input">
+                        <input type="password" name="retype_password" id="retype_password" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="form-field-label">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="form-field-input">
+                        <input type="text" name="email" id="email">
+                    </div>
+                </div>
+                <div class="form-field required">
+                    <div class="form-field-label">
+                        <label for="name">Name:</label>
+                    </div>
+                    <div class="form-field-input">
+                        <input type="text" name="name" id="name">
+                    </div>
+                </div>
+                <div class="form-field required">
+                    <div class="form-field-label">
+                        <label for="phone">Phone No.</label>
+                    </div>
+                    <div class="form-field-input phone-field-input">
+                        <input type="hidden" name="phone" id="phone" required>
+                        <input type="text" name="phone_code" id="phone_code" required class="input-phone_code" value="+92">
+                        <input type="text" name="phone_first" id="phone_first_part" required class="input-phone_first_part">
+                        <input type="text" name="phone_second" id="phone_second_part" required class="input-phone_second_part">
+                        <div class="add-button-block">
+                            <a class="add_phone_button" href="#">Add Phone <span class="plus"><img src="./images/plus.png" alt=""></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="form-field-label">
+                        <label for="mobile">Mobile No.</label>
+                    </div>
+                    <div class="form-field-input phone-field-input">
+                        <input type="hidden" name="mobile" id="mobile">
+                        <input type="text" name="mobile_code" id="mobile_code" class="input-phone_code" value="+92">
+                        <input type="text" name="mobile_first" id="mobile_first_part" class="input-phone_first_part">
+                        <input type="text" name="mobile_second" id="mobile_second_part" class="input-phone_second_part">
+                        <div class="add-button-block">
+                            <a class="add_phone_button" href="#">Add Phone <span class="plus"><img src="./images/plus.png" alt=""></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="form-field-label">
+                        <label for="fax">Fax:</label>
+                    </div>
+                    <div class="form-field-input phone-field-input">
+                        <input type="hidden" name="fax" id="fax">
+                        <input type="text" name="fax_code" id="fax_code" class="input-phone_code">
+                        <input type="text" name="fax_first" id="fax_first_part" class="input-phone_first_part">
+                        <input type="text" name="fax_second" id="fax_second_part" class="input-phone_second_part no-margin-right">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="form-field-label">
+                        <label for="address">Address:</label>
+                    </div>
+                    <div class="form-field-input">
+                        <input type="text" name="address" id="address">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="form-field-label">
+                        <label for="zip">Zip Code:</label>
+                    </div>
+                    <div class="form-field-input">
+                        <input type="text" name="zip" id="zip">
+                    </div>
+                </div>
+                <div class="form-field required">
+                    <div class="form-field-label">
+                        <label for="province">Province:</label>
+                    </div>
+                    <div class="form-field-input form-field-selects">
+                        <div class="form-field-select">
+                            <select name="province" id="province" placeholder="Select your Province" required>
+                                <option value="province1">Select your Province</option>
+                                <option value="province1">Province1</option>
+                                <option value="province2">Province2</option>
+                                <option value="province3">Province3</option>
+                            </select>
+                        </div>
+                        <div class="form-field-select required">
+                            <label for="city">City</label>
+                            <select name="city" id="city" placeholder="Select your City" required>
+                                <option value="province1">Select your City</option>
+                                <option value="city1">City1</option>
+                                <option value="city2">City2</option>
+                                <option value="city3">City3</option>
+                            </select>
+                        </div>
+                        <div class="form-field-select required">
+                            <label for="country">Country</label>
+                            <select name="country" id="country" placeholder="Select your Country" required>
+                                <option value="province1">Select your Country</option>
+                                <option value="country1">Country1</option>
+                                <option value="country2">Country2</option>
+                                <option value="country3">Country3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-block">
+                    <button>Create User</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

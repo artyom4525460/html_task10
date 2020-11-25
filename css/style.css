@@ -8,7 +8,7 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
   color: #202020;
-  font-family: "S FPro Text", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 12px; }
 
 html,
@@ -23,7 +23,13 @@ section {
   margin: 0 auto;
   background-color: #ffffff;
   box-sizing: border-box;
-  padding: 0 15px; }
+  padding: 0 40px; }
+  @media screen and (max-width: 1920px) {
+    section {
+      padding: 0 2.08vw; } }
+  @media screen and (max-width: 450px) {
+    section {
+      padding: 0 15px; } }
 
 .shadow {
   position: fixed;
@@ -38,6 +44,12 @@ section {
   color: #000000;
   font-weight: bold;
   padding: 0 0 20px; }
+  @media screen and (max-width: 1920px) {
+    .title {
+      padding: 0 0 1.04vw; } }
+  @media screen and (max-width: 450px) {
+    .title {
+      padding: 0 0 20px; } }
 
 * {
   outline: none;
@@ -58,16 +70,40 @@ h1 {
   line-height: 60px;
   font-weight: 800;
   color: #521231; }
+  @media screen and (max-width: 1920px) {
+    h1 {
+      font-size: 2.08vw;
+      line-height: 3.12vw; } }
+  @media screen and (max-width: 450px) {
+    h1 {
+      font-size: 40px;
+      line-height: 60px; } }
 
 h2 {
   font-size: 30px;
   line-height: 45px;
   font-weight: 800; }
+  @media screen and (max-width: 1920px) {
+    h2 {
+      font-size: 1.56vw;
+      line-height: 2.34vw; } }
+  @media screen and (max-width: 450px) {
+    h2 {
+      font-size: 30px;
+      line-height: 45px; } }
 
 h3 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400; }
+  @media screen and (max-width: 1920px) {
+    h3 {
+      font-size: 0.83vw;
+      line-height: 1.25vw; } }
+  @media screen and (max-width: 450px) {
+    h3 {
+      font-size: 16px;
+      line-height: 24px; } }
 
 .login-section {
   width: 100vw;
@@ -85,9 +121,12 @@ h3 {
   top: 20px;
   left: 20px;
   cursor: pointer; }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 450px) {
     .menu-button {
       width: 35px; } }
+
+.no-margin-right {
+  margin-right: 0 !important; }
 
 input {
   width: 100%;
@@ -136,6 +175,12 @@ form {
   width: 100%;
   color: #fff;
   padding-top: 25px; }
+  @media screen and (max-width: 1920px) {
+    .header {
+      padding-top: 1.3vw; } }
+  @media screen and (max-width: 450px) {
+    .header {
+      padding-top: 25px; } }
   .header .title {
     display: flex;
     justify-content: center;
@@ -144,3 +189,333 @@ form {
     .header .title .title-text {
       color: #ffffff;
       font-size: 17px; }
+      @media screen and (max-width: 1920px) {
+        .header .title .title-text {
+          font-size: 0.88vw; } }
+      @media screen and (max-width: 450px) {
+        .header .title .title-text {
+          font-size: 17px; } }
+
+.registration-header {
+  padding-bottom: 22px; }
+  @media screen and (max-width: 1920px) {
+    .registration-header {
+      padding-bottom: 1.14vw; } }
+  @media screen and (max-width: 450px) {
+    .registration-header {
+      padding-bottom: 22px; } }
+  .registration-header h1 {
+    font-size: 30px;
+    color: #521231;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin: 40px 0;
+    text-align: center; }
+    @media screen and (max-width: 1920px) {
+      .registration-header h1 {
+        font-size: 1.56vw;
+        margin: 2.08vw 0; } }
+    @media screen and (max-width: 450px) {
+      .registration-header h1 {
+        font-size: 30px;
+        margin: 0; } }
+  .registration-header .line-block {
+    display: flex;
+    align-items: center; }
+    .registration-header .line-block .line {
+      background-color: #202020;
+      height: 8px;
+      border-radius: 4px 0 0 4px;
+      width: 100%;
+      position: relative;
+      overflow: visible; }
+      @media screen and (max-width: 1920px) {
+        .registration-header .line-block .line {
+          height: 0.41vw; } }
+      @media screen and (max-width: 450px) {
+        .registration-header .line-block .line {
+          height: 8px; } }
+    .registration-header .line-block .line-left {
+      width: 100px; }
+      @media screen and (max-width: 1920px) {
+        .registration-header .line-block .line-left {
+          width: 5.2vw; } }
+      @media screen and (max-width: 450px) {
+        .registration-header .line-block .line-left {
+          width: 58px; } }
+    .registration-header .line-block .line-text {
+      width: fit-content;
+      font-size: 24px;
+      color: #521231;
+      font-weight: 400;
+      font-family: "Poppins";
+      padding: 7px;
+      background-color: #ffffff;
+      white-space: nowrap; }
+      @media screen and (max-width: 1920px) {
+        .registration-header .line-block .line-text {
+          font-size: 1.25vw; } }
+      @media screen and (max-width: 450px) {
+        .registration-header .line-block .line-text {
+          font-size: 24px; } }
+
+.registration-form {
+  width: 100%; }
+  .registration-form .form-field {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 450px) {
+      .registration-form .form-field {
+        flex-direction: column;
+        align-items: flex-start; } }
+    .registration-form .form-field .form-field-label {
+      width: 400px;
+      max-width: 30%; }
+      @media screen and (max-width: 1920px) {
+        .registration-form .form-field .form-field-label {
+          width: 20.83vw; } }
+      @media screen and (max-width: 450px) {
+        .registration-form .form-field .form-field-label {
+          width: 100%; } }
+      .registration-form .form-field .form-field-label label {
+        position: relative;
+        font-size: 25px;
+        color: #202020;
+        font-weight: 600; }
+        @media screen and (max-width: 1920px) {
+          .registration-form .form-field .form-field-label label {
+            font-size: 1.3vw; } }
+        @media screen and (max-width: 450px) {
+          .registration-form .form-field .form-field-label label {
+            white-space: nowrap;
+            font-size: 20px; } }
+    .registration-form .form-field .form-field-input {
+      width: 100%; }
+      .registration-form .form-field .form-field-input input {
+        height: 50px;
+        margin: 10px 0;
+        padding: 16px 23px;
+        font-size: 22px;
+        color: #000000;
+        font-weight: 400; }
+        @media screen and (max-width: 1920px) {
+          .registration-form .form-field .form-field-input input {
+            height: 2.6vw;
+            margin: 0.52vw 0;
+            padding: 0.83vw 1.19vw;
+            font-size: 1.14vw; } }
+        @media screen and (max-width: 450px) {
+          .registration-form .form-field .form-field-input input {
+            height: 50px;
+            margin: 10px 0;
+            padding: 15px;
+            font-size: 22px; } }
+    .registration-form .form-field.required label:after {
+      content: '*';
+      position: absolute;
+      font-size: 20px;
+      top: 0;
+      right: -10px;
+      color: #fc4040; }
+      @media screen and (max-width: 1920px) {
+        .registration-form .form-field.required label:after {
+          font-size: 1.04vw;
+          right: -0.52vw; } }
+      @media screen and (max-width: 450px) {
+        .registration-form .form-field.required label:after {
+          font-size: 20px;
+          right: -10px; } }
+    .registration-form .form-field .phone-field-input {
+      display: flex; }
+      @media screen and (max-width: 450px) {
+        .registration-form .form-field .phone-field-input {
+          flex-wrap: wrap;
+          justify-content: space-between; } }
+      .registration-form .form-field .phone-field-input .input-phone_code {
+        width: 112px;
+        margin-right: 23px; }
+        @media screen and (max-width: 1920px) {
+          .registration-form .form-field .phone-field-input .input-phone_code {
+            width: 5.83vw;
+            margin-right: 1.19vw; } }
+        @media screen and (max-width: 450px) {
+          .registration-form .form-field .phone-field-input .input-phone_code {
+            width: 80px;
+            margin-right: 0; } }
+        @media screen and (max-width: 370px) {
+          .registration-form .form-field .phone-field-input .input-phone_code {
+            width: 21.62vw; } }
+      .registration-form .form-field .phone-field-input .input-phone_first_part {
+        width: 141px;
+        margin-right: 23px; }
+        @media screen and (max-width: 1920px) {
+          .registration-form .form-field .phone-field-input .input-phone_first_part {
+            width: 7.34vw;
+            margin-right: 1.19vw; } }
+        @media screen and (max-width: 450px) {
+          .registration-form .form-field .phone-field-input .input-phone_first_part {
+            width: 96px;
+            margin-right: 0; } }
+        @media screen and (max-width: 370px) {
+          .registration-form .form-field .phone-field-input .input-phone_first_part {
+            width: 25.94vw; } }
+      .registration-form .form-field .phone-field-input .input-phone_second_part {
+        width: 100%;
+        margin-right: 40px; }
+        @media screen and (max-width: 1920px) {
+          .registration-form .form-field .phone-field-input .input-phone_second_part {
+            margin-right: 2.08vw; } }
+        @media screen and (max-width: 450px) {
+          .registration-form .form-field .phone-field-input .input-phone_second_part {
+            width: 144px;
+            margin-right: 0; } }
+        @media screen and (max-width: 370px) {
+          .registration-form .form-field .phone-field-input .input-phone_second_part {
+            width: 38.91vw; } }
+      .registration-form .form-field .phone-field-input .add-button-block {
+        margin: 10px 0;
+        position: relative;
+        min-width: 300px; }
+        @media screen and (max-width: 1920px) {
+          .registration-form .form-field .phone-field-input .add-button-block {
+            margin: 0.52vw 0;
+            min-width: 15.62vw; } }
+        @media screen and (max-width: 450px) {
+          .registration-form .form-field .phone-field-input .add-button-block {
+            margin: 10px 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end; } }
+        .registration-form .form-field .phone-field-input .add-button-block .add_phone_button {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          font-size: 25px;
+          color: #ffffff;
+          font-weight: 500;
+          padding: 16px 26px;
+          height: 50px;
+          border-radius: 8px;
+          background-color: #521231;
+          position: relative; }
+          @media screen and (max-width: 1920px) {
+            .registration-form .form-field .phone-field-input .add-button-block .add_phone_button {
+              font-size: 1.3vw;
+              padding: 0.83vw 1.35vw;
+              height: 2.6vw; } }
+          @media screen and (max-width: 450px) {
+            .registration-form .form-field .phone-field-input .add-button-block .add_phone_button {
+              width: 225px;
+              font-size: 25px;
+              padding: 16px;
+              height: 50px;
+              border-radius: 8px; } }
+          .registration-form .form-field .phone-field-input .add-button-block .add_phone_button .plus {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translate(0, -50%);
+            width: 40px; }
+            @media screen and (max-width: 1920px) {
+              .registration-form .form-field .phone-field-input .add-button-block .add_phone_button .plus {
+                right: 1.56vw;
+                width: 2.08vw; } }
+            @media screen and (max-width: 450px) {
+              .registration-form .form-field .phone-field-input .add-button-block .add_phone_button .plus {
+                right: 23px;
+                width: 30px; } }
+    .registration-form .form-field .form-field-selects {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0; }
+      @media screen and (max-width: 1920px) {
+        .registration-form .form-field .form-field-selects {
+          margin: 0.52vw 0; } }
+      @media screen and (max-width: 450px) {
+        .registration-form .form-field .form-field-selects {
+          margin: 0;
+          flex-direction: column; } }
+      .registration-form .form-field .form-field-selects .form-field-select select {
+        width: 380px;
+        height: 50px;
+        font-size: 22px;
+        padding: 13px 23px;
+        color: #000000;
+        font-weight: 400;
+        border-radius: 8px;
+        background-color: #f9faff;
+        border: 0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background-image: url("../images/down-arrow.png");
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
+        background-size: 26px;
+        cursor: pointer; }
+        @media screen and (max-width: 1920px) {
+          .registration-form .form-field .form-field-selects .form-field-select select {
+            width: 19.79vw;
+            height: 2.6vw;
+            font-size: 1.14vw;
+            padding: 0.67vw 1.19vw;
+            background-size: 1.35vw; } }
+        @media screen and (max-width: 450px) {
+          .registration-form .form-field .form-field-selects .form-field-select select {
+            width: 100%;
+            height: 50px;
+            font-size: 22px;
+            padding: 13px;
+            background-size: 26px;
+            margin: 10px 0; } }
+      .registration-form .form-field .form-field-selects .form-field-select ::-ms-expand {
+        display: none; }
+      .registration-form .form-field .form-field-selects label {
+        width: 50px;
+        font-size: 25px;
+        color: #202020;
+        font-weight: 600;
+        padding: 0 50px 0 40px;
+        position: relative; }
+        @media screen and (max-width: 1920px) {
+          .registration-form .form-field .form-field-selects label {
+            width: 2.6vw;
+            font-size: 1.3vw;
+            padding: 0 2.6vw 0 2.08vw; } }
+        @media screen and (max-width: 450px) {
+          .registration-form .form-field .form-field-selects label {
+            width: fit-content;
+            font-size: 20px;
+            padding: 0; } }
+        .registration-form .form-field .form-field-selects label:after {
+          right: -10px; }
+  .registration-form .button-block {
+    text-align: right;
+    padding: 35px 0; }
+    @media screen and (max-width: 1920px) {
+      .registration-form .button-block {
+        padding: 1.82vw 0; } }
+    @media screen and (max-width: 450px) {
+      .registration-form .button-block {
+        padding: 35px 0; } }
+    .registration-form .button-block button {
+      width: 346px;
+      max-width: 100%;
+      height: 50px;
+      border-radius: 8px;
+      font-size: 25px;
+      color: #ffffff;
+      font-weight: 500;
+      line-height: 0; }
+      @media screen and (max-width: 1920px) {
+        .registration-form .button-block button {
+          width: 18.02vw;
+          height: 2.6vw;
+          font-size: 1.3vw; } }
+      @media screen and (max-width: 450px) {
+        .registration-form .button-block button {
+          width: 346px;
+          height: 50px;
+          border-radius: 8px;
+          font-size: 25px; } }

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 28" width="33" height="28">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #202020;stroke-linecap:round;stroke-width: 3 } 
+	</style>
+	<path id="Path 381" class="shp0" d="M2.4 13.79L21.59 13.79" />
+	<path id="Path 382" class="shp0" d="M2.4 2L30.01 2" />
+	<path id="Path 383" class="shp0" d="M2.4 25.59L21.59 25.59" />
+</svg>

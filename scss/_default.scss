@@ -2,10 +2,13 @@
     DEFAULT
 */
 
-$max-width: 640px;
+$max-width: 1920px;
 $max-mobile-width: 450px;
+$max-mobile-min: 370px;
 
 /* colors: */
+
+$purpur: #521231;
 
 body {
     padding: 0;
@@ -13,7 +16,7 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
     color: #202020;
-    font-family: "S FPro Text", Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 
@@ -30,7 +33,13 @@ section {
     margin: 0 auto;
     background-color: #ffffff;
     box-sizing: border-box;
-    padding: 0 15px;
+    padding: 0 40px;
+    @media screen and (max-width: $max-width){
+        padding: 0 2.08vw;
+    }
+    @media screen and (max-width: $max-mobile-width){
+        padding: 0 15px;   
+    }
 }
 
 .shadow{
@@ -47,6 +56,12 @@ section {
     color: #000000;
     font-weight: bold;
     padding: 0 0 20px;
+    @media screen and (max-width: $max-width){
+        padding: 0 0 1.04vw;
+    }
+    @media screen and (max-width: $max-mobile-width){
+        padding: 0 0 20px;   
+    }
 }
 
 * {
@@ -72,18 +87,46 @@ h1{
     line-height: 60px;
     font-weight: 800;
     color: #521231;
+
+    @media screen and (max-width: $max-width){
+        font-size: 2.08vw;
+        line-height: 3.12vw;
+    }
+    @media screen and (max-width: $max-mobile-width){
+        font-size: 40px;
+        line-height: 60px;  
+    }
 }
 
 h2{
     font-size: 30px;
     line-height: 45px;
     font-weight: 800;
+
+    @media screen and (max-width: $max-width){
+        font-size: 1.56vw;
+        line-height: 2.34vw;
+    }
+    @media screen and (max-width: $max-mobile-width){
+        font-size: 30px;
+        line-height: 45px; 
+    }
 }
 
 h3{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+
+
+    @media screen and (max-width: $max-width){
+        font-size: 0.83vw;
+        line-height: 1.25vw;
+    }
+    @media screen and (max-width: $max-mobile-width){
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .login-section{
@@ -104,7 +147,11 @@ h3{
     top: 20px;
     left: 20px;
     cursor: pointer;
-    @media screen and(max-width: $max-width){
+    @media screen and (max-width: $max-mobile-width){
         width: 35px;
     }
+}
+
+.no-margin-right{
+    margin-right: 0 !important;
 }
