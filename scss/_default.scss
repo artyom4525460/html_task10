@@ -89,12 +89,12 @@ h1{
     color: #521231;
 
     @media screen and (max-width: $max-width){
-        font-size: 2.08vw;
-        line-height: 3.12vw;
+        //font-size: 2.08vw;
+        //line-height: 3.12vw;
     }
     @media screen and (max-width: $max-mobile-width){
-        font-size: 40px;
-        line-height: 60px;  
+        //font-size: 40px;
+        //line-height: 60px;  
     }
 }
 
@@ -114,14 +114,14 @@ h2{
 }
 
 h3{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 28px;
+    line-height: 32px;
     font-weight: 400;
 
 
     @media screen and (max-width: $max-width){
-        font-size: 0.83vw;
-        line-height: 1.25vw;
+        //font-size: 0.83vw;
+        //line-height: 1.25vw;
     }
     @media screen and (max-width: $max-mobile-width){
         font-size: 16px;
@@ -136,6 +136,12 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .menu-button{
+        display: none;
+        @media screen and (max-width: $max-mobile-width){
+            display: block;
+        }    
+    }
 }
 
 .right-text{
